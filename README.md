@@ -46,6 +46,10 @@ python-learning-journey/
 │       ├── home.html
 │       ├── about.html
 │       └── contact.html
+├── 07_databases/
+│   ├── mysql_demo.py
+│   └── templates/
+│       └── users.html
 └── README.md
 ```
 
@@ -81,3 +85,23 @@ python-learning-journey/
 - `templates/contact.html` → Contact form template that accepts name, email, and message, and displays a confirmation.
 - `form_demo.py` → Standalone script demonstrating GET/POST form handling directly with `render_template_string`.
 
+## 07_databases
+
+This section introduces database integration with Flask using **MySQL**.
+
+### Files
+- `mysql_demo.py` → Flask app that connects to MySQL using `mysqlclient` (`MySQLdb`) and environment variables for credentials.
+- `templates/users.html` → Template that lists users retrieved from the database.
+
+### Setup
+1. Create the database and table in MySQL:
+   ```sql
+   CREATE DATABASE python_learning;
+   USE python_learning;
+
+   CREATE TABLE users (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       name VARCHAR(80)
+   );
+
+   INSERT INTO users (name) VALUES ('Alice'), ('Bob'), ('Charlie');

@@ -35,7 +35,10 @@ python-learning-journey/
 │   ├── encapsulation.py
 │   └── class_methods_static.py
 ├── 05_web_basics/
-│   └── cgi_hello.py
+│   ├── cgi_hello.py
+│   ├── cgi_form.py
+│   ├── cgi_env.py
+│   └── cgi_error.py
 ├── 06_flask_intro/
 │   ├── app.py
 │   └── templates/

@@ -6,6 +6,12 @@ Learning Python from the ground up
 Welcome to my structured path for learning Python — from the basics to web development with CGI and Flask.  
 This repository is both a **learning journal** and a **reference library**, showing my progression step by step.
 
+
+![Security Badge](https://img.shields.io/badge/Secrets-managed%20via%20.env%20%2B%20.gitignore-brightgreen)
+
+A structured learning project covering Python basics through databases and web integration.  
+Sensitive credentials are **never committed** — they are managed securely using `.env` files and excluded from Git with `.gitignore`.
+
 ---
 
 ## 📂 Project Structure
@@ -105,3 +111,77 @@ This section introduces database integration with Flask using **MySQL**.
    );
 
    INSERT INTO users (name) VALUES ('Alice'), ('Bob'), ('Charlie');
+
+   ## Database Configuration & Security
+
+This project uses a `config.py` file to manage database connection settings.  
+Sensitive information such as usernames and passwords are **never committed to Git**. Instead, they are stored in a local `.env` file and loaded at runtime using [python-dotenv](https://pypi.org/project/python-dotenv/).
+
+### How it works
+- `.env` contains environment variables (e.g., `MYSQL_USER`, `MYSQL_PASSWORD`).
+- `config.py` loads these variables securely with `dotenv`.
+- `.gitignore` excludes both `config.py` and `.env` to prevent accidental commits.
+
+### Example `.env`
+```env
+MYSQL_HOST=localhost
+MYSQL_USER=root
+MYSQL_PASSWORD=your_secure_password
+MYSQL_DATABASE=python_learning
+
+
+---
+
+## ✅ Why This Helps
+- Shows recruiters you understand **security and reproducibility**.
+- Makes it clear collaborators should set up their own `.env` file.
+- Reinforces that your repo is clean — no secrets in history.
+
+---
+
+Perfect — here’s a concise **Setup Instructions** section you can drop into your README so collaborators (or recruiters) know exactly how to run your database demo securely:
+
+---
+
+## ⚙️ Setup Instructions
+
+To run the database examples in `07_databases`, follow these steps:
+
+1. **Install dependencies**
+   ```bash
+   pip install python-dotenv mysql-connector-python
+   ```
+
+2. **Create a `.env` file** at the project root (same level as `README.md`):
+   ```env
+   MYSQL_HOST=localhost
+   MYSQL_USER=root
+   MYSQL_PASSWORD=your_secure_password
+   MYSQL_DATABASE=python_learning
+   ```
+
+3. **Verify `.gitignore`** excludes sensitive files:
+   ```
+   07_databases/config.py
+   .env
+   ```
+
+4. **Run the demo**
+   ```bash
+   python 07_databases/mysql_demo.py
+   ```
+
+5. **Confirm environment variables are loaded**
+   ```bash
+   python -c "import config; print(config.MYSQL)"
+   ```
+   → should print your connection dictionary with values from `.env`.
+
+---
+
+## ✅ Why This Helps
+- Keeps credentials out of GitHub history.  
+- Makes setup reproducible for anyone cloning your repo.  
+- Shows recruiters you understand secure, professional workflows.  
+
+---

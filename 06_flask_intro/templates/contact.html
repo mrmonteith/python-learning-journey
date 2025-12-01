@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Contact</title></head>
+<body>
+  <h1>Contact Us</h1>
+  <form method="post" action="/contact">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+
+    <input type="submit" value="Send">
+  </form>
+
+  {% if message %}
+    <h2>{{ message }}</h2>
+  {% endif %}
+
+  <p><a href="/">Back to Home</a></p>
+  <p><a href="/about">About page</a></p>
+</body>
+</html>

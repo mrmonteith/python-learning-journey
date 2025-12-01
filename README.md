@@ -41,8 +41,11 @@ python-learning-journey/
 │   └── cgi_error.py
 ├── 06_flask_intro/
 │   ├── app.py
+│   ├── form_demo.py
 │   └── templates/
-│       └── index.html
+│       ├── home.html
+│       ├── about.html
+│       └── contact.html
 └── README.md
 ```
 
@@ -72,7 +75,9 @@ python-learning-journey/
 - `cgi_error.py` → Demonstrates error handling in CGI scripts.
 
 ## 06_flask_intro
-- `app.py` → Minimal Flask app with a single route.
-- `templates/index.html` → Basic Jinja2 template rendering.
-- `form_demo.py` → Handles form input using Flask routes.
+- `app.py` → Flask app with multiple routes (`/`, `/about`, `/contact`) demonstrating navigation and template rendering.
+- `templates/home.html` → Home page template with links to About and Contact.
+- `templates/about.html` → About page template describing the app.
+- `templates/contact.html` → Contact form template that accepts name, email, and message, and displays a confirmation.
+- `form_demo.py` → Standalone script demonstrating GET/POST form handling directly with `render_template_string`.
 

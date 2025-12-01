@@ -184,3 +184,23 @@ To run the database examples in `07_databases`, follow these steps:
 - Shows recruiters I understand secure, professional workflows.  
 
 ---
+
+🔄 Workflow Diagram
++------------------+
+|      .env        |
+| (stores secrets) |
++------------------+
+         |
+         v
++------------------+
+|    config.py     |
+| loads with       |
+| python-dotenv    |
++------------------+
+         |
+         v
++------------------+
+| mysql_demo.py    |
+| uses MYSQL dict  |
+| for connection   |
++------------------+

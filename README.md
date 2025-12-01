@@ -22,7 +22,12 @@ python-learning-journey/
 │   ├── loops.py
 │   └── break_continue.py
 ├── 03_functions/
-│   └── functions_intro.py
+│   ├── functions_intro.py
+│   ├── lambda_functions.py
+│   ├── scope.py
+│   ├── docstrings.py
+│   ├── args_kwargs.py
+│   └── recursion_examples.py
 ├── 04_oop/
 │   └── classes_objects.py
 ├── 05_web_basics/

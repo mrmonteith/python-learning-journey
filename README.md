@@ -129,17 +129,16 @@ MYSQL_USER=root
 MYSQL_PASSWORD=your_secure_password
 MYSQL_DATABASE=python_learning
 
-
 ---
 
 ## ✅ Why This Helps
-- Shows recruiters you understand **security and reproducibility**.
+- Shows recruiters I understand **security and reproducibility**.
 - Makes it clear collaborators should set up their own `.env` file.
 - Reinforces that your repo is clean — no secrets in history.
 
 ---
 
-Perfect — here’s a concise **Setup Instructions** section you can drop into your README so collaborators (or recruiters) know exactly how to run your database demo securely:
+Perfect — here’s a concise **Setup Instructions** section I can drop into your README so collaborators (or recruiters) know exactly how to run your database demo securely:
 
 ---
 
@@ -182,6 +181,6 @@ To run the database examples in `07_databases`, follow these steps:
 ## ✅ Why This Helps
 - Keeps credentials out of GitHub history.  
 - Makes setup reproducible for anyone cloning your repo.  
-- Shows recruiters you understand secure, professional workflows.  
+- Shows recruiters I understand secure, professional workflows.  
 
 ---

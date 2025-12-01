@@ -29,7 +29,11 @@ python-learning-journey/
 │   ├── args_kwargs.py
 │   └── recursion_examples.py
 ├── 04_oop/
-│   └── classes_objects.py
+│   ├── classes_objects.py
+│   ├── inheritance.py
+│   ├── polymorphism.py
+│   ├── encapsulation.py
+│   └── class_methods_static.py
 ├── 05_web_basics/
 │   └── cgi_hello.py
 ├── 06_flask_intro/
